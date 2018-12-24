@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+	<head>
+	<!-- Required meta tags -->
+		<meta charset="utf-8>
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS-->
+		<link rel="stylesheet" href="bootstrap.min.css">
+		<link rel="stylesheet" href="coinFlip.css">
+		<title>coinFlip.js</title>
+	</head>
+	<body>
+		<main class="d-flex  flex-column align-items-center justify-content-center w-100 h-100 mx-auto">
+			<div class="container border d-flex flex-column align-items-center justify-content-center w-100 h-100 border-light" style="margin-top: 150px;">
+					<div>
+					<div class="scene inlineview" >
+						<div class="coin0 rounded-circle" style="">
+							<div class="coin0__face coin0__face--front" >heads
+							</div>
+							<div class="coin0__face coin0__face--back" >tails
+							</div>
+						</div>
+					</div>
+					<div class="scene2 inlineview" >
+						<div class="coin1 rounded-circle" style="">
+							<div id ="demo3" class="coin1__face coin1__face--front" >
+							</div>
+							<div id ="demo4" class="coin1__face coin1__face--back" >
+							</div>
+						</div>
+					</div>
+					</div>
+					<div class="container border">
+						<span class="row justify-content-center">
+							<button type="button" onclick="flipCoin(coin0)" class="btn btn-lg btn-tertiary m-2 flipButton">Flip</button>
+							<button type="button" onclick="flipCoin(coin1)" class="btn btn-lg btn-tertiary m-2">Flip</button>
+						</span>
+					</div>
+
+			</div>
+			<!--Javascript-->
+			<script src="coinFlip.js"></script>
+	<!-- optional in order javascript jquery popper.js bootstrap js.
+			<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+			<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script> -->
+		</main>
+	</body>
+</html>
