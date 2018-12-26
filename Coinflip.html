@@ -13,37 +13,56 @@
 		<main class="d-flex  flex-column align-items-center justify-content-center w-100 h-100 mx-auto">
 			<div class="container border d-flex flex-column align-items-center justify-content-center w-100 h-100 border-light" style="margin-top: 150px;">
 					<div>
-					<div class="scene inlineview" >
-						<div class="coin0 rounded-circle" style="">
-							<div class="coin0__face coin0__face--front" >heads
-							</div>
-							<div class="coin0__face coin0__face--back" >tails
-							</div>
-						</div>
-					</div>
-					<div class="scene2 inlineview" >
-						<div class="coin1 rounded-circle" style="">
-							<div id ="demo3" class="coin1__face coin1__face--front" >
-							</div>
-							<div id ="demo4" class="coin1__face coin1__face--back" >
+						<div class="scene inlineview" id="container0">
+							<div class="coin0 rounded-circle" style="">
+								<div id ="coin0Front" class="coin0__face coin0__face--front" >
+								</div>
+								<div id ="coin0Back" class="coin0__face coin0__face--back" >
+								</div>
 							</div>
 						</div>
-					</div>
+						<div class="scene2 inlineview hideElement" id="container1" >
+							<div class="coin1 rounded-circle" style="">
+								<div id ="coin1Front" class="coin1__face coin1__face--front" >
+								</div>
+								<div id ="coin1Back" class="coin1__face coin1__face--back" >
+								</div>
+							</div>
+						</div>
 					</div>
 					<div class="container border">
 						<span class="row justify-content-center">
-							<button type="button" onclick="flipCoin(coin0)" class="btn btn-lg btn-tertiary m-2 flipButton">Flip</button>
-							<button type="button" onclick="flipCoin(coin1)" class="btn btn-lg btn-tertiary m-2">Flip</button>
+						<div>
+							<button type="button" onclick="flipCoin(coin0)" class="btn btn-lg btn-tertiary m-2 flipButton">
+								Flip
+							</button>
+						</div>
+							<div class="btn-group-vertical btn-group-toggle" data-toggle="buttons"> # of Krark's Thumbs
+								<label class ="btn btn-secondary active" onclick="hideElement(container1, 0)" >
+									<input type="radio" name="options" id="option1"  autocomplete="off" >One
+								</label>
+								<label class="btn btn-secondary" onclick="showElement(container1, 1)">
+									<input type="radio" name="options" id="option2" autocomplete="off"> Two
+								</label>
+								<label class="btn btn-secondary" onclick="showElement(container1, 2)">
+									<input type="radio" name="options" id="option3" autocomplete="off"> Three
+								</label>
+								<label class="btn btn-secondary" onclick="showElement(container1, 3)">
+									<input type="radio" name="options" id="option4" autocomplete="off"> Four
+								</label>
+								<label class="btn btn-secondary" onclick="showElement(container1, 4)">
+									<input type="radio" name="options" id="option5" autocomplete="off"> Five
+								</label>
+							</div>
 						</span>
 					</div>
 
 			</div>
 			<!--Javascript-->
 			<script src="coinFlip.js"></script>
-	<!-- optional in order javascript jquery popper.js bootstrap js.
-			<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-			<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-			<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script> -->
+			<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+			<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 		</main>
 	</body>
 </html>
