@@ -13,15 +13,18 @@ body { font-family: sans-serif; }
 .coin0 {
   width: 100%;
   height: 100%;
-  transition: transform 1s;
   transform-style: preserve-3d;
   cursor: pointer;
   position: relative;
   border: 1px solid #CCC;
 }
 
-.coin0.is-flipped {
-  transform: rotateY(180deg);
+.is-flipped {
+	transform: rotateY(720deg);
+	transition-duration: 0.755s;
+}
+.hideElement{
+	display: none;
 }
 
 .coin0__face {
@@ -55,16 +58,13 @@ body { font-family: sans-serif; }
 .coin1 {
   width: 100%;
   height: 100%;
-  transition: transform 1s;
   transform-style: preserve-3d;
   cursor: pointer;
   position: relative;
   border: 1px solid #Cab
 }
 
-.coin1.is-flipped {
-  transform: rotateY(180deg);
-}
+
 
 .coin1__face {
   position: absolute;
