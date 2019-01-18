@@ -1,5 +1,16 @@
 body { font-family: sans-serif; }
 
+.wrapper{
+	width: 100%;
+	height: 100%
+	margin: 0px auto;
+}
+.resize{
+	width: 100%;
+	height: 100%
+	margin: 0px auto;
+	
+}
 .scene {
   width: 200px;
   height: 260px;
